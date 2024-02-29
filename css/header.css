@@ -81,13 +81,30 @@
     }
   
     .background .image {
-      height: 300px;
-      width: 300px;
+      height: 200px;
+      width: 200px;
+      margin-top: 40px;
     }
   
     .title {
       font-size: 2.5rem;
     }
+
+    /* .service__grid {
+      height: 250px;
+      margin-top: auto;
+      width: 100%;
+      display: inline;
+    }
+
+   */
+
+   .service {
+    height: 100vh;
+   }
+
+
+
   }
   
   
@@ -104,11 +121,11 @@
   
   .service {
       background-color: #F3F4F6;
-      height: 500px;
+      height: 600px;
       margin-top: 100px;
   }
   
-  .service__grid,
+  /* .service__grid,
   .project__grid {
     grid-template-columns: repeat(1, 1fr);
     gap: 1rem;
@@ -117,35 +134,56 @@
   
   .service__grid {
       display: flex;
-      margin-left: 20%;
+      justify-content: center;
       height: 250px;
+  } */
+
+  /* .service__grid {
+    background-color: #B42119;
+    display: grid;
   }
-  
+ */
+
+
+ .service__grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 100px;
+ }
+
+
+
+
+
+
   .service__card {
-    width: 25%;
-    align-items: flex-start;
-    gap: 1rem;
     padding: 2rem;
     background-color: white;
     border-radius: 5px;
     text-align: center;
     margin-right: 20px;
     border-radius: 5%;
-  
-    display: block;
-    position: relative;
-    border-radius: 4px;
     padding: 32px 24px;
     margin: 12px;
     text-decoration: none;
     z-index: 0;
+  
+
+    width: 400px;
     overflow: hidden;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+    transform: scale(1);
+
+    
   
     &:before {
       content: "";
       position: absolute;
       z-index: -1;
-      top: -16px;
       right: -16px;
       background: #319ba2;
       height: 32px;
@@ -154,11 +192,18 @@
       transform: scale(1);
       transform-origin: 50% 50%;
       transition: transform 0.25s ease-out;
+      margin-top: -40px;
     }
   
     &:hover:before {
       transform: scale(21);
     }
+  }
+
+  .service__card:hover {
+    background: #319ba2; 
+    
+    cursor: pointer;
   }
   
   .service__card h4{
@@ -249,7 +294,6 @@
   }
   
   .kiri {
-    margin-top: 10%;
     width : 60%;
     margin-left: 50px;
   
@@ -257,6 +301,7 @@
   
   .kiri h1 {
       text-align: left;
+      font-weight: 500;
   }
   
   .kiri h2{
@@ -301,7 +346,110 @@
       float: left;
   }
   
-  
+  /* PORTOTOFOLIO */
+
+  @media screen and (width < 500px) {
+    .content {
+      margin-top: 70px;
+    }
+
+    .section-title {
+     margin: auto;
+    }
+
+    .service {
+      height: 900px;
+    }
+
+    .service__grid {
+      margin-top: 0px;
+    }
+
+    .kiri {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 100px;
+
+    }
+
+    .kiri h1, .kiri h2{
+     width: 82%;
+     padding-left: 30px;
+     padding-right: 20px;
+     text-align: left;
+
+    }
+
+    .tulisan {
+      margin: auto;
+      width: 400px;
+
+    }
+
+    .tulisan h1 {
+      margin-left: 17px;
+    }
+
+    .tulisan h2 {
+      margin: auto;
+      text-align: left;
+    }
+
+    /* .container_miro {
+      margin-left: 1%;
+    } */
+
+    .container_miro p {
+      padding-top: 20px;
+      text-align: left;
+      background-color: #1DA112;
+    }
+
+    /* .miro {
+     margin-left: 40px;
+    } */
+
+    .miro1 {
+      width: 50px;
+      margin-left: 0px;
+      float: left;
+    }
+
+    .kiri_tulisan {
+      margin-top: -380px;
+    }
+
+    .tulisan h1 {
+      font-weight: bold;
+    }
+
+    .foto_project {
+      width: 40px;
+      height: 40px;
+      margin-left: 50px;
+      margin-top: -40px;
+    }
+
+    .tulisan {
+      margin-top: -50px;
+    }
+
+    .kiri_cofi{
+      margin-top: -100px;
+    }
+
+    .foto_project_cofi {
+      margin-top: -130px;
+      width: 40px;
+      margin-left: -55px;
+    }
+
+    .card_gambar_cofi {
+      margin-top: -300px;
+    }
+
+
+  }
   
   
   /* PROJECT */
@@ -545,7 +693,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 250px;
-    width : 160px;
+    width : 200px;
     height: 50px;
     border-color: #81d89b;
     border-radius: 5%;
@@ -670,8 +818,37 @@
     justify-content: center;
     align-items: center;
   } */
+
+  .tulisan_miro{
+    display: flex;
+    padding-bottom: 20px;
+    width : 70%;
+    text-align: left;
+    margin-left: 0px;
+  }
   
-  
-  
+  .tulisan p {
+    display: flex;
+    padding-bottom: 20px;
+    width : 70%;
+    text-align: left;
+    margin-left: 50px;
+  }
+
+
+.miro {
+  width: 50px;
+  float: left;
+}
       
-  
+
+.miro_travel {
+  width: 50px;
+  margin-left: -550px;
+}
+
+
+.button_figma {
+  width: 100px;
+}
+    
