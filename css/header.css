@@ -103,6 +103,11 @@
     height: 100vh;
    }
 
+   .skill2{
+    padding-top: 100px;
+    height: 800px;
+   }
+
 
 
   }
@@ -115,13 +120,15 @@
     }
   
   /* Skill */
+
+
+
   .service, footer {
     background-color: var(--primary-color);
   }
   
   .service {
       background-color: #F3F4F6;
-      height: 600px;
       margin-top: 100px;
   }
   
@@ -144,18 +151,18 @@
   }
  */
 
+ .service {
+  height: 800px;
+ }
 
  .service__grid{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 100px;
+  margin-bottom: -100px;
+  
  }
-
-
-
-
-
 
   .service__card {
     padding: 2rem;
@@ -350,7 +357,7 @@
 
   @media screen and (width < 500px) {
     .content {
-      margin-top: 70px;
+      margin-top: 600px;
     }
 
     .section-title {
@@ -764,8 +771,8 @@
   /* CONTACT */
   
   .card_contact {
-    background-color: #2D2D2D;
     padding-top: 30px;
+    margin-bottom: -50px;
   }
   .card_contact h1, h2, p {
     text-align: center;
