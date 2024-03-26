@@ -397,11 +397,14 @@
       padding-left: 55px;
     }
 
-    .tulisan h2 {
+    .tulisan h5 {
       margin: auto;
       text-align: left;
       padding-left: 35px;
+      text-transform: none;
     }
+
+
 
 
 
@@ -420,14 +423,15 @@
       margin-left: 1%;
     } */
 
-    .container_miro p {
-      padding-top: 20px;
-      text-align: left;
-    }
 
     /* .miro {
      margin-left: 40px;
     } */
+
+    .tulisan a {
+      text-align: left;
+      background-color: #980044;
+    }
 
     .miro1 {
       width: 50px;
